@@ -1,0 +1,402 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Vollkorn:wght@600&display=swap');
+*{scroll-behavior: smooth}
+body
+{
+	background-color: #FCFCFC; /*màu nền trang web */
+	color: #73716E;
+	font-family: Roboto, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 16px;
+	margin: 0
+}
+h1{	font-size: 40px;
+color: white;
+font-family: Vollkorn, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";}
+h2{	font-size: 40px;
+color: black; font-family: Vollkorn,"Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"}
+h3{	font-size: 30px; 
+	font-family: Vollkorn, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: black}
+h4{font-size: 20px;
+color: #000; font-family: Roboto, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"}
+h5  {font-size: 16px; color: #ece7d1; font-family: Roboto, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+.btn-primary
+{
+	background-color: #66431b;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+}
+.btn-primary:hover
+{background-color: #8e7451}
+* {box-sizing: border-box} /*tinh tu vien tinh vao*/
+.col-1 { width: 8.333333%}
+.col-2 { width: 16.66%}
+.col-3 { width: 25%}
+.col-4 { width: 33.33333%}
+.col-5{ width: 41.66%}
+.col-6 { width: 50%}
+.col-7 { width: 58.33%}
+.col-8 { width: 66.66%}
+.col-9 { width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12 { width: 100%}
+.container { width: 80%; margin: auto}
+[class*="col-"]
+/*{
+	border: 1px solid red;
+	padding:15px
+}
+*/
+.img-100 { width: 100%; height: auto}
+.row { display: flex; flex-wrap: wrap}
+.img-90{width: 95%; height: auto}
+
+nav
+{
+	background: white;
+	position: fixed; /*khoa thanh menu*/
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding-bottom: 10px;
+	padding-top: 0;
+	box-shadow:10px 15px 50px rgba(0,0,100,0.2);
+	z-index: 9999999;
+	height: 90px;
+}
+nav .container
+{  
+display: flex;
+justify-content: space-between;
+/*align-items: none;*/
+justify-content: flex-start;
+}
+nav a.logo img {width: 150px; height: auto} /* chỉnh kích cỡ logo trong thanh mennu*/
+
+nav .menu ul
+{
+margin: 10px;
+padding: 0;
+list-style: none;
+display: flex;
+margin-bottom: 10px
+}
+nav .menu ul li {position: relative} /*chỉnh li theo ul*/
+nav .menu ul li a
+{
+	color: #000000;
+	text-decoration: none;
+	padding: 10px 10px;
+	text-transform: uppercase;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;	
+}
+nav .menu ul li a:hover
+{
+color: gray;
+cursor:pointer;
+}
+nav .menu ul li a.active
+{
+	background-color: #D6202B;
+	color: white;
+}
+nav .menu ul ul
+{ display: block;
+	background: #ece7d1;
+	position: absolute;
+	left: 0;
+	top: 200%;
+	width: 250px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 99999;
+	transition:  all 0.5s
+
+}
+/*--giong theo cheu doc cac box trong 1 row co flex--*/
+.align-items-center { align-items: center}
+.align-items-top { align-items:flex-start}
+.align-items-bottom { align-items:flex-end}
+/*--giong theo cheu ngang cac box trong 1 row co flex--*/
+.justify-center{justify-content: center}
+.justify-start{justify-content: flex-start}
+.justify-end{justify-content: flex-end}
+.justify-between {justify-content: space-between}
+.justify-around {justify-content: space-around}
+
+nav .menu ul li:hover>ul
+{
+top: 100%; left: 0;
+visibility: visible;
+opacity: 1
+}
+nav .menu ul ul a
+{display: block}
+
+nav .icon a { color: black}
+.btn-secondary2:hover
+{color: #fff;
+	background-color:black;
+}
+.btn-secondary3
+{
+	color: #ece7d1;
+	/*padding-left: 100px;*/
+	text-decoration:none;
+transition: all 0.5s;
+/*	display: flex-end;*/
+}
+.btn-secondary3:hover
+{color: #fff;
+	text-decoration:none;
+	visibility: visible;
+	opacity: 100;
+	left:0;
+	top:100%
+}
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color:#E4E4E4;
+	border-radius: 100px;
+	padding: 22px 0;
+}
+/*.icon {
+  width: 10px;
+  height: 10px;
+}*/
+#vung4
+{
+	background-image: url("../img/sig_coll_desk.webp");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 950px;
+
+	
+}
+#popup1
+{
+	background-color: #ece7d1;
+	padding: 5px;
+}
+#popup2
+{
+	background-color: #ece7d1;
+	padding: 5px;
+}
+#popup3
+{
+	background-color: #ece7d1;
+	padding: 5px;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee p {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee p span {
+  margin-right: 80px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(20%); }
+  100% { transform: translateX(-20%); }
+}
+#popup {
+   /* Style your popup */
+	background-color: black;	
+}
+#footer {
+  background-color: #ece7d1;
+  padding: 50px;
+  text-align: center;
+}
+#footer .container p 
+{
+	color: #66431b;
+	margin-bottom: 10%;
+	
+}
+#footer .container p:hover
+{
+	color: #8e7451;
+	cursor:pointer;
+}
+#footer .container a 
+{
+	text-decoration: none;
+	
+}
+	/*pop-up-form*/
+body {font-family: Roboto,Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #d6b96e;
+  color: white;
+	left: -3.7%;
+	margin-top:30%;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 50%;
+ /* right: 28px;*/
+  width: 180px;
+	transform:rotate(-90deg);
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+	background-color: #000;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #ece7d1;
+	}
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #8e7451;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #ece7d1 ;
+	color: #8e7451;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.card
+{
+	position: relative;
+	
+}
+.card button
+{
+	position: absolute;
+	top: 5%; right: 15%;
+	visibility: hidden, 5%;
+	z-index: 999;
+	transition: all 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.card:hover>button
+{
+	top: 54%; right: 15%;
+	opacity: 1;
+	visibility: visible;
+}
+.card .icon
+{
+	position: absolute;
+	top: 4%; left: 79%;
+	z-index: 999;
+	opacity: 0; visibility: hidden;
+	transition: all 1s;
+	
+}
+.card .icon a
+{
+	color: #66431b;
+	padding: 6px;
+	display:block;
+}
+.card .icon a:hover
+{
+	color: #ece7d1;
+
+}
+.card:hover>.icon
+{
+		opacity: 1; visibility: visible;
+}
+#vung7 .container
+{
+	background-color: #66431b;
+	margin-bottom: 10%;
+}
+.btn-primary
+{
+	background-color: #66431b;
+	color: white;
+	padding: 12px;
+	text-decoration: none;
+}
+.btn-primary:hover
+{background-color: #ece7d1;
+color: black}
+.btn-primary1
+{
+	background-color: #66431b;
+	color: white;
+	padding: 20px 20px;
+	text-decoration: none;
+	border-radius: 100%;
+}
+.btn-primary1:hover
+{background-color: #8e7451}
+.btn-secondary
+{
+	text-decoration: none;
+	color: #66431b;
+	background-color: #ece7d1;
+	padding: 10px;
+	border-radius: 30px;
+}
+.btn-secondary:hover
+{
+	color: #ece7d1;
+	background-color: #66431b;
+	
+}

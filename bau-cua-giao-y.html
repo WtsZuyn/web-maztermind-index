@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Collection</title>
+<link rel="icon" href="img/logo-icon.png" type="image/x-icon">
+<link rel="stylesheet" href="img/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<link rel="stylesheet" href="css/bau-cua-y-giao.css">
+	</head>
+<body>
+	<nav>
+		<div class="container">
+			
+			<div class="menu">
+				<div class="row align-items-center">
+					<div class="col-4">
+						<ul>
+							<li><a href="ve-chung-toi.html">Giới Thiệu</a>
+							<ul>
+								<li><a href="ve-chung-toi.html">Về Chúng Tôi</a></li>
+								<li><a href="nghe-thuat-thu-cong.html">Nghệ Thuật Thủ Công</a></li>
+							</ul> <!--menu gioi thieu cua ba Anh-->
+							</li>
+							<li><a href="san-pham.html">Sản Phẩm</a></li>
+							<li><a href="bau-cua-giao-y.html">Collection</a>
+							<ul>
+							  	<li><a href="bau-cua-giao-y.html">Bầu Cua Ý Giao</a></li>
+							  	<li><a href="sagonopoly.html"> SaiGonopoly</a></li>
+							  	<li><a href="lunami-dice-poker.html"> Lumina Dice Pokcer</a></li>
+							  </ul>
+							</li>
+						</ul>
+					
+					</div>
+					<div align="center" class="col-4">
+					<ul>
+						<a href="index.html"><img src="img/logo.png" alt="" class="img-80" width="50px"></a>
+					</ul>
+					</div>
+					
+					<div class="col-4">
+						<ul>
+							<li><a href="cach-choi.html">Cách chơi</a></li>
+							<li><a href="feedback.html">Feedback</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
+							<div class="icon">
+							<a href="#"><span class="material-symbols-outlined">search</span></a>
+							<a href="#"><span class="material-symbols-outlined">shopping_bag</span></a>
+
+						</div>
+						</ul>
+						
+						
+					
+					</div>
+				</div>
+			
+				
+			</div>
+			
+			</div>
+			
+		
+	
+	
+	</nav>
+	<section id="vung1">
+	<div class="container">
+		<div class="row">
+			<div class="col-6" style="margin-top: 40px">
+			<div class="slideshow-container">
+        <div class="mySlides">
+            <img src="img/baucua-2.jpg" class="img-80" alt="">
+        </div>
+        <div class="mySlides">
+            <img src="img/baucua-3.jpg" class="img-80" alt="">
+        </div>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+			</div>
+			<div class="col-6" style="position: relative">
+			<h2>Bầu Cua Ý Giao - Phiên Bản Gỗ</h2>
+				<a href="collection.html" class="btn-primary">New Arrival</a>
+			<h4>3.290.000₫</h4>
+			<ul>
+				<li>Tiết kiệm 18% khi mua Combo Tết Xôm Vầy Nghinh Xuân kèm 2 bộ bài và 1 rượu mơ </li>
+				<li> Tiết kiệm 12% khi mua Combo Tết Xôm Vầy Mơ Xuân kèm 4 lót ly và 1 rượu mơ </li>
+				<li>Sự kết hợp độc đáo giữa bộ Bầu Cua và hộp mứt ngày Tết </li>
+				<li>Sử dụng kỹ thuật ghép gỗ, mộng gỗ tỉ mỉ và chuẩn xác </li>
+				<li>Được chế tác bởi 12 nghệ nhân trong vòng 20 giờ </li>
+				<li>Tự hào được làm thủ công tại Việt Nam </li>
+			</ul>
+			<hr style="color: #8e7451; opacity: 50%;" width="90%" align="center">
+				<p>Combo Tết Xum Vầy</p>
+				  <div class="combo-buttons">
+        <a href="collection.html" class="combo-buttons1">Không Combo</a>
+		<a href="collection.html" class="combo-buttons2">Nghinh Xuân</a>
+		<a href="collection.html" class="combo-buttons3">Mơ Xuân</a>			  
+    </div>
+    <h4>Số lượng:</h4>
+    <div class="quantity" style="margin-bottom: 30px ">
+        <button onclick="decreaseQuantity()">-</button>
+        <input type="text" id="quantity" value="1">
+        <button onclick="increaseQuantity()">+</button>
+    </div>
+    <script>
+        function increaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+        function decreaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+    </script>
+			<a href="shopping-bag.html" class="combo-buttons4" style="text-align: center">Thêm vào giỏ hàng</a>
+			</div>
+		</div>
+		
+		</div>
+	</section>
+	<section id="vung2">
+	<div class="container">
+		<div class="row" align="center" style="margin-top: 0">
+			<div class="col-12">
+			<h2>Tiết kiệm đến 23%</h2>
+				<h4>ĐÓN TẾT SANG - COMBO XỊN cùng MAZTERMIND x PHÙNG THỊ</h4>
+			</div>
+		</div>
+		
+		</div>
+	</section>
+	<section id="vung3">
+	<div class="container">
+		<div class="row" style="margin-bottom: 100px">
+			<div class="col-4">
+			<img src="img/bau-cua4.jpg" alt="" class="img-80" >
+			<h4>COMBO Nghinh Xuân - Tiết kiệm 18%</h4>
+			<p style="margin-bottom: 35px">- 1 Bộ Bầu Cua Ý Giao phiên bản Gỗ <br>
+- 1 Rượu mơ má đào Phùng Thị - 500ml <br>
+- 2 Bộ bài Championship & Bộ 04 lót ly Tứ Bình</p>
+				<a href="bau-cua-giao-y.html" class="btn-primary1" style="margin-top: 50px" >Mua Ngay</a>
+			</div>
+			<div class="col-4">
+			<img src="img/baucua-5.jpg" alt="" class="img-80">
+			<h4>COMBO Mơ Xuân - Tiết kiệm 12%</h4>
+			<p style="margin-bottom: 35px">- 1 Bộ Bầu Cua Ý Giao phiên bản Gỗ <br>
+- 1 Rượu mơ má đào Phùng Thị - 500ml <br>
+- Bộ 4 lót ly Tứ Bình</p>
+				<a href="bau-cua-giao-y.html" class="btn-primary1" style="margin-top: 50px" >Mua Ngay</a>
+			</div>
+			<div class="col-4">
+			<img src="img/du-xuan.webp" alt="" class="img-80">
+			<h4>COMBO Du Xuân - Tiết kiệm 23%</h4>
+			<p style="margin-bottom: 35px">- 1 Bộ Bầu Cua Ý Giao phiên bản Da tặng kèm túi Tote <br>
+- 1 Rượu mơ má đào Phùng Thị <br> - 500ml
+- 1 Bộ bài Championship</p>
+				<a href="bau-cua-giao-y.html" class="btn-primary1" style="margin-top: 50px" >Mua Ngay</a>
+			</div>
+		</div>
+		
+		
+		</div>
+	</section>
+	<section id="vung4">
+	<img src="img/YGiao_banner_PC_min.webp" alt="">
+	</section>
+	<section id="vung5">
+	<div class="container">
+		<div class="row" align="center">
+			<div class="col-3"></div>
+			<div class="col-6 align-items-center justify-between" >
+			<h2>Ý tưởng thiết kế mới</h2>
+				<p style="margin-bottom: 50px">Trải qua quá trình nâng cấp sáng tạo, Bầu Cua Ý Giao là sự “kết giao” của những “ý tưởng” độc đáo. Để Bầu cua không chỉ là món ăn tinh thần mỗi dịp Tết, mà khi được kết hợp để trở thành Hộp mứt mang ý nghĩa kết nối thân tình, Bầu Cua Ý Giao còn trở thành một sản phẩm bền vững đi cùng gia chủ suốt mùa lễ Tết; từ lúc trang hoàng nhà cửa, chuẩn bị từng gói bánh mứt thiết đãi khách quý, đến những ngày “mùng" khi người thân quây quần bên nhau, rộn ràng vui chơi, trò chuyện. Để khi thấy Xuân về, Bầu Cua Ý Giao và Bạn, Bạn và những người thương yêu, chúng ta lại gặp nhau.</p>
+			</div>
+			<div class="col-3"></div>
+		</div>
+		
+		</div>
+	</section>
+	<section id="vung6">
+	<div class="container">
+		<div class="row align-items-center justify-around">
+		<!--<div class="col-1"></div>-->
+			<div class="col-6">
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-8"><h2 align="center">Cảm hứng tranh Đông Hồ</h2>
+				<p>Bộ Bầu Cua Ý Giao, như một tác phẩm nghệ thuật độc đáo, đã rút ngắn khoảng cách giữa Tết xưa và nay, đưa cái Tết hiện đại gần hơn với những giá trị truyền thống của người Việt ta. Nguồn cảm hứng chính của sản phẩm đến từ tranh dân gian Đông Hồ, nơi mà màu sắc tươi tắn và nét vẽ phóng khoáng từ xa xưa đã trở thành lời chúc mừng năm mới với nhiều niềm vui và may mắn. Kế thừa những giá trị văn hoá quý báu của dân tộc, Maztermind với tinh thần cách tân, đã lồng ghép khéo léo và cách điệu từng chi tiết để gửi gắm vào các mặt Bầu Cua Ý Giao như một lời chúc phúc và thành công cho gia chủ. </p>
+			</div></div>
+					<div class="col-2"></div>
+				</div>
+			
+			<!--<div class="col-1"></div>-->
+			<div class="col-6" >
+			<img src="img/baucua-2.jpg" class="img-100" alt="" style="margin-right: 0">
+			</div>
+		</div>
+		<!--het row 1-->
+		<div class="row align-items-center justify-around">
+			<div class="col-6 text-align-center" >
+			<img src="img/baucua-2.jpg" class="img-100" alt="">
+			</div>
+			<!--<div class="col-1"></div>-->
+			<div class="col-6">
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-8"><h2 align="center">Chất lượng thủ công bền vững</h2>
+				<p>Thoả mãn trải nghiệm chơi của khách hàng từ từng chi tiết nhỏ nhất, bộ Bầu Cua Ý Giao được Maztermind chăm chút trong mỗi nét vẽ cho đến kết cấu tổng thể. Để cho ra một bộ sản phẩm đáp ứng cả hai công năng; mặt nắp là bộ bầu cua và phần thân là hộp đựng mứt tròn trịa, chúng tôi đã áp dụng những kỹ thuật ghép gỗ thủ công, sử dụng mộng gỗ để tạo sự kết nối chặt chẽ giữa các thành phần và tăng tính thẩm mĩ. Ba viên xí ngầu gỗ được in UV họa tiết rõ nét mang lại tiếng lắc vui tai đặc trưng. Để nâng cao chất lượng bảo quản thực phẩm, phần khay đựng mứt và hộp lắc xí ngầu được phủ một lớp dầu L.CO - một loại dầu thân thiện với người tiêu dùng.</p></div>
+					<div class="col-2"></div>
+				</div>
+			
+			</div>
+			<!--<div class="col-1"></div>-->
+		</div>
+		<!--het row 2-->
+			<div class="row align-items-center justify-around">
+		<!--<div class="col-1"></div>-->
+			<div class="col-6">
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-8"><h2 align="center">Món quà thay cho lời chúc năm mới</h2>
+				<p>Với sự kết hợp giữa tranh Đông Hồ, và tạo hình hộp mứt hoa đào 6 cánh, bộ Bầu Cua Ý Giao (gỗ) sẽ là một món phụ kiện trưng bày ngày tết cực kỳ ý nghĩa; chứa đựng những lời chúc sâu sắc về sự thịnh vượng và may mắn. Tết này hãy cùng bạn bè và những người thân yêu cùng nhau quây quần bên Bầu Cua Ý Giao để tạo nên những khoảnh khắc đặc biệt và đáng nhớ. Đây chắc chắn sẽ là một món quà tuyệt vời vừa tôn vinh văn hoá truyền thống vừa thay bạn trao gửi yêu thương</p></div>
+					<div class="col-2"></div>
+				</div>
+			
+			</div>
+			<!--<div class="col-1"></div>-->
+			<div class="col-6 text-align-center" >
+			<img src="img/baucua-2.jpg" class="img-100" alt="">
+			</div>
+		</div>
+		<!--het row 3-->
+	<div class="row align-items-center justify-start">
+			<div class="col-6">
+			<img src="img/baucua-2.jpg" alt="" class="img-100">
+			</div>
+			<!--<div class="col-1"></div>-->
+			<div class="col-6">
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-8"><h2 align="center">Tiết Kiệm đến 23% <br> Với COMBO Tết Xum Vầy</h2>
+				<p align="center">Cùng tạo nên những khoảnh khắc đặc biệt đáng nhớ với người thân thương cùng Bầu Cua Ý Giao và Rượu Mơ Má Đào từ Maztermind x Phùng Thị nhé.</p></div>
+					<div class="col-2"></div>
+				</div>
+							</div>
+
+					</div>
+	</div>
+	</section>
+	<section id="vung7">
+	<div class="container">
+		<div class="row">
+			<div class="col-6" style="position: relative">
+		<h2 align="center">Thông số kỹ thuật</h2>
+			<img class="sticky; img-100" src="img/snap.jpg" alt="Snap">
+
+			</div>
+			<div style="padding-left:5%; padding-top: 10%" class="col-6">	
+	<div class="row align-items-center">
+		<div class="col-4">
+		<h4>Chất liệu <br><br><br><br><br><br><br><br><br><br>Thành phần<br><br><br><br><br><br><br><br><br><br>Kích thước<br><br><br><br><br><br><br><br><br><br>Trọng lượng</h4>
+		</div>
+		<div class="col-8">
+		<p>- Hộp Bầu Cua: Gỗ beech, gỗ walnut, MDF, mực UV <br><br>
+
+- Khay đựng mứt: Gỗ beech <br><br>
+
+- Hũ lắc: Gỗ beech <br><br>
+
+- Nắp hũ lắc: Jesmonite <br><br>
+
+- Xí ngầu: Gỗ schima, mực UV <br><br>
+
+- Túi đựng xí ngầu: Vải canvas <br> <br> <br> <br>
+			1 hộp Bầu Cua <br><br>
+
+- 6 khay đựng mứt <br><br>
+
+- 1 hũ lắc <br><br>
+
+- 1 nắp hũ lắc <br><br>
+
+- 3 viên xí ngầu <br><br>
+
+- 1 túi đựng xí ngầu<br> <br> <br> <br>
+			- Hộp Bộ Bầu Cua: 400x84mm <br><br>
+
+- Khay đựng mứt: 122x175x48mm<br><br>
+
+ Hũ lắc: D122x60mm<br><br>
+
+- Nắp hũ lắc: D145x10mm<br><br>
+
+- Xí ngầu: 25x25x25mm<br> <br> <br> <br>
+			- Chỉ sản phẩm: 3.6 kg <br><br>
+
+- Bao gồm cả bao bì: 4.6 kg<br><br>
+
+</p>
+		</div>
+	</div>
+<!--hết row1-->
+	</div>
+			
+		</div>
+		
+		</div>
+	</section>
+</body>
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-4" align="left">
+				<h3>Đăng ký</h3>
+					<p><b>Công ty TNHH Maztermind</b></p>
+					<p><b>Địa chỉ: </b> 6/10 CMT8, P.Bến Thành, Q1, TP HCM</p>
+					<p><b>GPKD: </b> 0317015950, cấp ngày 05/11/2021, <br> tại sở KH&DT TP HCM</p>
+					<a href="http://online.gov.vn/Home/WebDetails/68255"><img src="img/logo10.avif" alt=""></a>
+				</div>
+				<!--het col 1-->
+				<div class="col-2" align="left">
+				 <p><b>Về chúng tôi</b></p>
+     <a href=""> <p>Giới thiệu</p></a>
+      <a href=""><p>Sản phẩm</p></a>
+     <a href=""><p>Khuyến mãi</p> </a>
+     <p>Cam kết</p>
+     <p>Press</p>
+     <a href=""> <p>Blog</p></a>
+				</div>
+				<!--het col 2-->
+				<div class="col-2" align="left">
+				 <p><b>Theo dõi</b></p>
+
+     <a href="http://qrco.de/maztermind"> <p>Facebook</p></a>
+      <a href="http://qrco.de/maztermind"><p>Instagram</p></a>
+     <a href="http://qrco.de/maztermind/"> <p>Pinterest</p></a>
+      <a href="http://qrco.de/maztermind"><p>Youtube</p></a>
+				</div>
+				<!--het col 3-->
+				<div class="col-2" align="left">
+				 <p><b>Chính sách</b></p>
+
+     <p>Đổi trả</p>
+     <p>Giao hàng</p>
+     <p>Bảo mật</p>
+     <p>Liên hệ</p>
+				</div>
+				<!--het col 4-->
+				<div class="col-2" align="left">
+				 <p><b>Hợp tác</b></p>
+
+     <p>Quà tặng doanh nghiệp</p>
+     <p>Đối tác mua sỉ</p>
+     <p>Thiết kế theo yêu cầu</p>
+      <a href="pdf/Maztermind_Catalogue_2024.pdf"><p>Catalogue sản phẩm</p></a>
+				</div>
+				<!--het col 4-->
+				
+			
+			</div>
+		</div>
+		
+</div>
+</html>
